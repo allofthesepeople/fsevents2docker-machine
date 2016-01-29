@@ -1,3 +1,5 @@
+// +build darwin
+
 package main
 
 import (
@@ -60,29 +62,6 @@ func main() {
 		in.ReadString('\n')
 		es.Stop()
 	}
-
-	// in := bufio.NewReader(os.Stdin)
-
-	// if false {
-	// 	log.Print("Started, press enter to GC")
-	// 	in.ReadString('\n')
-	// 	runtime.GC()
-	// 	log.Print("GC'd, press enter to quit")
-	// 	in.ReadString('\n')
-	// } else {
-	// 	log.Print("Started, press enter to stop")
-	// 	in.ReadString('\n')
-	// 	es.Stop()
-
-	// 	log.Print("Stopped, press enter to restart")
-	// 	in.ReadString('\n')
-	// 	es.Resume = true
-	// 	es.Start()
-
-	// 	log.Print("Restarted, press enter to quit")
-	// 	in.ReadString('\n')
-	// 	es.Stop()
-	// }
 }
 
 // Map of events we car about
